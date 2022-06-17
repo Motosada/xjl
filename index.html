@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>饼子的传奇人生</title>
+    <title>Document</title>
     <style>
-      .body {
+      body {
         margin: 0;
         height: 100vh;
         background-color: #eee;
@@ -14,13 +14,10 @@
       * {
         border: 0px solid black;
       }
-      .yinying {
-        box-shadow: wheat;
-      }
       .flex {
         display: flex;
       }
-      .baiSe {
+      .BS {
         background-color: white;
       }
       .flex1 {
@@ -28,6 +25,12 @@
       }
       .column {
         flex-direction: column;
+      }
+      .center {
+        justify-content: center;
+      }
+      .row {
+        flex-direction: row;
       }
       .mg8 {
         margin: 8px;
@@ -38,127 +41,127 @@
       .mgt8 {
         margin-top: 8px;
       }
-      .daohang {
-        padding: 10px 20px;
-        border-bottom: 1px solid greenyellow;
-        font-size: 14px;
-        color: #666;
-      }
-      .youQu {
+      .mgl8 {
         margin-left: 8px;
       }
-      .shuJu {
-        margin: 0 0 8px;
-        flex: auto;
-      }
-      .neiRong::-webkit-scrollbar {
-        display: none;
-      }
-
-      /* 当屏幕小于600px时改变的css*/
-      @media (max-width: 600px) {
-        .ceBian {
-          display: none;
-        }
-        .neiRong {
-          flex-direction: column;
-        }
-        .shuJuQu {
-          flex-direction: column;
-        }
-        .div1 {
-          width: 100px;
-          height: 100px;
-        }
+      .mgb8 {
+        margin-bottom: 8px;
       }
     </style>
-    <script>
-      function myFunction() {
-        document.getElementById("demo").innerHTML =
-          "不出所望这是一个屎山代码";
-      }
-      window.alert(520 + 1);
-    </script>
   </head>
-  <body class="flex body">
-    <!--侧边栏-->
-    <div style="width: 200px; z-index: 1" class="baiSe">
-      <!--头像栏-->
-      <div
-        style="
-          padding: 10px;
-          align-items: center;
-          justify-content: center;
-          border-bottom: 1px solid #999;
-        "
-        class="flex"
-      >
-        <img
-          src="https://s1.328888.xyz/2022/06/05/W34bm.jpg"
-          width="80px"
-          ="40px"
-          alt=""
-          class="div1"
-        />
-        <div style="margin-left: 18px">维尔利特•伊芙加登</div>
+  <body class="flex column">
+    <!--头部栏-->
+    <div style="height: 30%" class="BS mgr8 mgt8 mgl8">
+      <!--音乐组件-->
+      <div class="flex center BS">
+        <audio
+          autoplay="autoplay"
+          controls="controls"
+          loop="loop"
+          preload="auto"
+          src="https://www.xzmp3.com/down/753eabcf8213.mp3"
+        ></audio>
       </div>
-      <!--导航栏-->
-      <div class="felx">
-        <div class="daohang">导航</div>
-        <div class="daohang">导航</div>
-        <div class="daohang">导航</div>
-        <div class="daohang">导航</div>
-        <div class="daohang">导航</div>
-      </div>
+      <h1 class="flex center">hello world</h1>
     </div>
-    <!--主区域-->
-    <div class="flex1 flex column">
-      <!--头部栏-->
-      <div style="height: 60px; z-index: 1" class="baiSe yinying">
-        <font style="background-color: black">祝你前程似锦，高考加油！！</font>
-        刮刮乐，刮开有惊喜~
-      </div>
-      <!--内容区-->
-      <div style="overflow: auto" class="neiRong flex1 flex">
-        <!--左区-->
-        <div style="flex: 3" class="flex column mg8">
-          <!--数据区-->
-          <div class="flex shuJuQu">
-            <!--数据块-->
-            <div style="height: 100px" class="shuJu flex1 baiSe mgr8 yinying">
-              <p>
-                <a href="https://motosada.github.io/xjl/" target="_blank">
-                  本站链接：https://motosada.github.io/xjl/</a>
-              </p>
-            </div>
-            <div style="height: 100px" class="shuJu flex1 baiSe mgr8 yinying">
-              站位符
-            </div>
-            <div style="height: 100px" class="shuJu flex1 baiSe mgr8 yinying">
-              站位符
-            </div>
-            <div style="height: 100px" class="shuJu flex1 baiSe yinying">
-              站位符
-            </div>
-          </div>
-          <!--列表区-->
-          <div style="height: 160px" class="baiSe mgt8 yinying">
-            <p style="color: pink; font-size: px">
-              花无凋零之日， 亦无传递之时， 爱情亘古不变， 紫罗兰永世长存
-            </p>
-          </div>
-          <div style="height: 160px" class="baiSe mgt8 yinying">
-            <p>   <p id="demo">一个段落。</p>
-    <button type="button" onclick="myFunction()">点击这里</button></p>
-          </div>
-          <div style="height: 160px" class="baiSe mgt8 yinying">占位符</div>
+    <!--身体-->
+    <div style="height: 68%" class="BS flex row">
+      <!--左区-->
+      <div style="width: 50%" class="BS mg8">
+        <h2 class="flex center">文章1</h2>
+        <h5 style="letter-spacing: 3px" class="flex center">
+          文章取自“狗屁不通文章生成器”
+        </h5>
+        <div style="letter-spacing: 3px" class="flex center column">
+          <p style="letter-spacing: 5px" class="flex center">
+            孔子说过一句著名的话，知之
+          </p>
+          <p style="letter-spacing: 5px" class="flex center">
+            者不如好之者，好之者不如乐
+          </p>
+          <p style="letter-spacing: 5px" class="flex center">
+            之者。带着这句话, 我们还要
+          </p>
+          <p style="letter-spacing: 5px" class="flex center">
+            更加慎重的审视这个问题: 莎
+          </p>
+          <p style="letter-spacing: 5px" class="flex center">
+            士比亚曾经说过，抛弃时间的
+          </p>
+          <p style="letter-spacing: 5px" class="flex center">
+            人，时间也抛弃他。这句话语
+          </p>
+          <p style="letter-spacing: 5px" class="flex center">
+            虽然很短, 但令我浮想联翩.
+          </p>
+          <p style="letter-spacing: 5px" class="flex center">
+            那么， 普列姆昌德曾经说过，
+          </p>
+          <p style="letter-spacing: 5px" class="flex center">
+            希望的灯一旦熄灭，生活刹那
+          </p>
+          <p style="letter-spacing: 5px" class="flex center">
+            间变成了一片黑暗。这不禁令
+          </p>
+          <p style="letter-spacing: 5px" class="flex center">
+            我深思. 就我个人来说，薇尔
+          </p>
+          <p style="letter-spacing: 5px" class="flex center">
+            莉特对我的意义，不能不说非
+          </p>
+          <p style="letter-spacing: 5px" class="flex center">常重大。</p>
         </div>
-        <!--右区-->
-        <div style="flex: 1" class="youQu flex column mgr8 mgt8">
-          <!--提示区-->
-          <div style="height: 150px" class="baiSe yinying">站位符</div>
-          <!--消息区-->
-          <div style="height: 300px" class="baiSe mgt8 yinying">站位符</div>
+      </div>
+      <!--右区-->
+      <div style="width: 50%" class="BS mgr8 mgt8 mgb8">
+        <h2 class="flex center">文章2</h2>
+        <h5 style="letter-spacing: 3px" class="flex center">
+          文章取自“狗屁不通文章生成器”
+        </h5>
+        <div style="letter-spacing: 3px" class="flex center column">
+          <p style="letter-spacing: 5px" class="flex center">
+            要想清楚，我是王耀峥，到底是
+          </p>
+          <p style="letter-spacing: 5px" class="flex center">
+            一种怎么样的存在。 总结的来
+          </p>
+          <p style="letter-spacing: 5px" class="flex center">
+            说， 既然如何， 我是王耀峥因
+          </p>
+          <p style="letter-spacing: 5px" class="flex center">
+            何而发生。马云说过一句富有哲
+          </p>
+          <p style="letter-spacing: 5px" class="flex center">
+            理的话，最大的挑战和突破在于
+          </p>
+          <p style="letter-spacing: 5px" class="flex center">
+            用人，而用人最大的突破在于信
+          </p>
+          <p style="letter-spacing: 5px" class="flex center">
+            任人。这启发了我. 在这种困难
+          </p>
+          <p style="letter-spacing: 5px" class="flex center">
+            的抉择下，本人思来想去，寝食
+          </p>
+          <p style="letter-spacing: 5px" class="flex center">
+            难安。 我认为， 所谓我是王耀
+          </p>
+          <p style="letter-spacing: 5px" class="flex center">
+            峥，关键是我是王耀峥需要如何
+          </p>
+          <p style="letter-spacing: 5px" class="flex center">
+            写。 从这个角度来看， 生活中
+          </p>
+          <p style="letter-spacing: 5px" class="flex center">
+            ，若我是王耀峥出现了，我们就
+          </p>
+          <p style="letter-spacing: 5px" class="flex center">
+            不得不考虑它出现了的事实。 我
+          </p>
+          <p style="letter-spacing: 5px" class="flex center">
+            们都知道，只要有意义，那么就
+          </p>
+          <p style="letter-spacing: 5px" class="flex center">必须慎重考虑。</p>
         </div>
       </div>
     </div>
